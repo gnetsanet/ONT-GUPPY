@@ -1,0 +1,362 @@
+{
+    "jobDefinitions": [
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:7",
+            "revision": 7,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling:latest",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [
+                    "true"
+                ],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/var/lib/nvidia-docker/volumes/nvidia_driver/latest"
+                        },
+                        "name": "nvidia"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/usr/local/nvidia",
+                        "sourceVolume": "nvidia"
+                    }
+                ],
+                "privileged": true,
+                "ulimits": [],
+                "user": "root",
+                "resourceRequirements": [
+                    {
+                        "value": "1",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:6",
+            "revision": 6,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "privileged": true,
+                "ulimits": [],
+                "resourceRequirements": [
+                    {
+                        "value": "1",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:5",
+            "revision": 5,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "privileged": false,
+                "ulimits": [],
+                "resourceRequirements": [
+                    {
+                        "value": "1",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:4",
+            "revision": 4,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "privileged": true,
+                "ulimits": [],
+                "resourceRequirements": [
+                    {
+                        "value": "1",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:3",
+            "revision": 3,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "privileged": true,
+                "ulimits": [],
+                "resourceRequirements": [
+                    {
+                        "value": "2",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:2",
+            "revision": 2,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "ulimits": [],
+                "resourceRequirements": [
+                    {
+                        "value": "2",
+                        "type": "GPU"
+                    }
+                ]
+            }
+        },
+        {
+            "jobDefinitionName": "nextlow-ont",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/nextlow-ont:1",
+            "revision": 1,
+            "status": "ACTIVE",
+            "type": "container",
+            "parameters": {},
+            "retryStrategy": {
+                "attempts": 3
+            },
+            "containerProperties": {
+                "image": "XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/ont-basecalling",
+                "vcpus": 1,
+                "memory": 1024,
+                "command": [],
+                "volumes": [
+                    {
+                        "host": {
+                            "sourcePath": "/home/ec2-user/miniconda"
+                        },
+                        "name": "aws-cli"
+                    },
+                    {
+                        "host": {
+                            "sourcePath": "/efs"
+                        },
+                        "name": "references"
+                    }
+                ],
+                "environment": [],
+                "mountPoints": [
+                    {
+                        "containerPath": "/home/ec2-user/miniconda",
+                        "sourceVolume": "aws-cli"
+                    },
+                    {
+                        "containerPath": "/efs",
+                        "sourceVolume": "references"
+                    }
+                ],
+                "ulimits": [],
+                "resourceRequirements": []
+            }
+        },
+        {
+            "jobDefinitionName": "first-run-job-definition",
+            "jobDefinitionArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:job-definition/first-run-job-definition:1",
+            "revision": 1,
+            "status": "INACTIVE",
+            "type": "container",
+            "parameters": {},
+            "containerProperties": {
+                "image": "busybox",
+                "vcpus": 2,
+                "memory": 2000,
+                "command": [
+                    "echo",
+                    "'hello world'"
+                ],
+                "volumes": [],
+                "environment": [],
+                "mountPoints": [],
+                "ulimits": [],
+                "resourceRequirements": []
+            }
+        }
+    ]
+}
