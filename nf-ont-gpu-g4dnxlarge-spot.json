@@ -1,0 +1,38 @@
+{
+    "computeEnvironments": [
+        {
+            "computeEnvironmentName": "nf-ont-gpu-g4dnxlarge-spot",
+            "computeEnvironmentArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:compute-environment/nf-ont-gpu-g4dnxlarge-spot",
+            "ecsClusterArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXXX:cluster/nf-ont-gpu-g4dnxlarge-spot_Batch_3c77718b-345d-3a76-9911-361297dcb7cf",
+            "type": "MANAGED",
+            "state": "ENABLED",
+            "status": "VALID",
+            "statusReason": "ComputeEnvironment Healthy",
+            "computeResources": {
+                "type": "SPOT",
+                "minvCpus": 0,
+                "maxvCpus": 256,
+                "desiredvCpus": 0,
+                "instanceTypes": [
+                    "g4dn.xlarge"
+                ],
+                "subnets": [
+                    "subnet-10fb944c",
+                    "subnet-1dd9b033",
+                    "subnet-aea71690",
+                    "subnet-387b4672",
+                    "subnet-a0bddfc7",
+                    "subnet-e4a88ceb"
+                ],
+                "securityGroupIds": [
+                    "sg-0d410f86c9ff1abaa"
+                ],
+                "ec2KeyPair": "mypemkey",
+                "instanceRole": "arn:aws:iam::XXXXXXXXXXXX:instance-profile/ecsInstanceRole",
+                "tags": {},
+                "bidPercentage": 50
+            },
+            "serviceRole": "arn:aws:iam::XXXXXXXXXXXX:role/AWSBatchServiceRole"
+        }
+    ]
+}
