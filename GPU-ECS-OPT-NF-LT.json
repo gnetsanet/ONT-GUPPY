@@ -1,0 +1,43 @@
+{
+    "computeEnvironments": [
+        {
+            "computeEnvironmentName": "GPU-ECS-OPT-NF-LT-LATEST",
+            "computeEnvironmentArn": "arn:aws:batch:us-east-1:XXXXXXXXXXX:compute-environment/GPU-ECS-OPT-NF-LT-LATEST",
+            "ecsClusterArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXX:cluster/GPU-ECS-OPT-NF-LT-LATEST_Batch_9ead44ae-b6ae-3636-a063-b14b6ba499cf",
+            "type": "MANAGED",
+            "state": "ENABLED",
+            "status": "VALID",
+            "statusReason": "ComputeEnvironment Healthy",
+            "computeResources": {
+                "type": "SPOT",
+                "minvCpus": 0,
+                "maxvCpus": 256,
+                "desiredvCpus": 0,
+                "instanceTypes": [
+                    "p3.2xlarge"
+                ],
+                "subnets": [
+                    "subnet-08038b30df84e2e53",
+                    "subnet-09fe937fa8895b378",
+                    "subnet-06062423487eee2dc",
+                    "subnet-078b2193755c90ed2",
+                    "subnet-019d72fc2d16da678",
+                    "subnet-00f20cd3792d87500"
+                ],
+                "securityGroupIds": [
+                    "sg-0193d4893b23c788f"
+                ],
+                "ec2KeyPair": "SA_Genomics.pem",
+                "instanceRole": "arn:aws:iam::XXXXXXXXXXX:instance-profile/ecsInstanceRole",
+                "tags": {},
+                "bidPercentage": 40,
+                "spotIamFleetRole": "arn:aws:iam::XXXXXXXXXXX:role/AmazonEC2SpotFleet",
+                "launchTemplate": {
+                    "launchTemplateId": "lt-0704b1f1adbbb557f",
+                    "version": "$Default"
+                }
+            },
+            "serviceRole": "arn:aws:iam::XXXXXXXXXXX:role/service-role/AWSBatchServiceRole"
+        }
+    ]
+}
