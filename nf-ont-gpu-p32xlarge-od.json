@@ -27,7 +27,7 @@
                 "securityGroupIds": [
                     "sg-0d410f86c9ff1abaa"
                 ],
-                "ec2KeyPair": "agentus-informatics",
+                "ec2KeyPair": "mypemkey",
                 "instanceRole": "arn:aws:iam::XXXXXXXXXXXX:instance-profile/ecsInstanceRole",
                 "tags": {}
             },
