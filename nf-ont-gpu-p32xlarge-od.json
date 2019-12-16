@@ -1,0 +1,37 @@
+{
+    "computeEnvironments": [
+        {
+            "computeEnvironmentName": "nf-ont-gpu-p32xlarge-od",
+            "computeEnvironmentArn": "arn:aws:batch:us-east-1:XXXXXXXXXXXX:compute-environment/nf-ont-gpu-p32xlarge-od",
+            "ecsClusterArn": "arn:aws:ecs:us-east-1:XXXXXXXXXXXX:cluster/nf-ont-gpu-p32xlarge-od_Batch_12b41511-31a0-3ec4-88ae-43d28f89562a",
+            "type": "MANAGED",
+            "state": "ENABLED",
+            "status": "VALID",
+            "statusReason": "ComputeEnvironment Healthy",
+            "computeResources": {
+                "type": "EC2",
+                "minvCpus": 0,
+                "maxvCpus": 256,
+                "desiredvCpus": 0,
+                "instanceTypes": [
+                    "p3.2xlarge"
+                ],
+                "subnets": [
+                    "subnet-10fb944c",
+                    "subnet-1dd9b033",
+                    "subnet-aea71690",
+                    "subnet-387b4672",
+                    "subnet-a0bddfc7",
+                    "subnet-e4a88ceb"
+                ],
+                "securityGroupIds": [
+                    "sg-0d410f86c9ff1abaa"
+                ],
+                "ec2KeyPair": "agentus-informatics",
+                "instanceRole": "arn:aws:iam::XXXXXXXXXXXX:instance-profile/ecsInstanceRole",
+                "tags": {}
+            },
+            "serviceRole": "arn:aws:iam::XXXXXXXXXXXX:role/AWSBatchServiceRole"
+        }
+    ]
+}
