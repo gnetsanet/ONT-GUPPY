@@ -8,3 +8,7 @@ aws batch describe-compute-environments --compute-environments  GPU-ECS-OPT-NF-L
 ```
 aws batch describe-job-queues --profile personal
 ```
+
+```
+aws batch describe-job-definitions --profile personal > nextlow-ont-job-definition.json
+```
