@@ -1,0 +1,12 @@
+Content-Type: multipart/mixed; boundary="==BOUNDARY=="
+MIME-Version: 1.0
+
+--==BOUNDARY==
+Content-Type: text/x-shellscript; charset="us-ascii"
+
+#!/bin/bash
+mkdir /data
+mkfs.xfs -K /dev/nvme1n1
+mount /dev/nvme1n1 /data
+
+--==BOUNDARY==--
