@@ -1,0 +1,19 @@
+{
+    "LaunchTemplateVersions": [
+        {
+            "LaunchTemplateId": "lt-0033d1dc792e92627",
+            "LaunchTemplateName": "TesteTemplateSSD",
+            "VersionNumber": 1,
+            "CreateTime": "2019-12-20T20:34:44.000Z",
+            "CreatedBy": "arn:aws:iam::650521217446:user/ngebremedhin",
+            "DefaultVersion": true,
+            "LaunchTemplateData": {
+                "KeyName": "SA_Genomics.pem",
+                "UserData": "Q29udGVudC1UeXBlOiBtdWx0aXBhcnQvbWl4ZWQ7IGJvdW5kYXJ5PSI9PUJPVU5EQVJZPT0iCk1JTUUtVmVyc2lvbjogMS4wCgotLT09Qk9VTkRBUlk9PQpDb250ZW50LVR5cGU6IHRleHQveC1zaGVsbHNjcmlwdDsgY2hhcnNldD0idXMtYXNjaWkiCgojIS9iaW4vYmFzaApta2RpciAvZGF0YQpta2ZzLnhmcyAtSyAvZGV2L252bWUxbjEKbW91bnQgL2Rldi9udm1lMW4xIC9kYXRhCgotLT09Qk9VTkRBUlk9PS0t",
+                "SecurityGroupIds": [
+                    "sg-0193d4893b23c788f"
+                ]
+            }
+        }
+    ]
+}
