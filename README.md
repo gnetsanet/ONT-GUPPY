@@ -13,6 +13,7 @@ aws batch describe-job-queues --profile personal
 aws batch describe-job-definitions --profile personal > nextlow-ont-job-definition.json
 ```
 
+```
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 418.87.00    Driver Version: 418.87.00    CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
@@ -28,3 +29,4 @@ aws batch describe-job-definitions --profile personal > nextlow-ont-job-definiti
 |=============================================================================|
 |    0     19209      C   ///ont-guppy/bin/guppy_basecaller           3251MiB |
 +-----------------------------------------------------------------------------+
+```
