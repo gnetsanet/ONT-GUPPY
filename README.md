@@ -1,5 +1,8 @@
 # ONT-GUPPY
 
+```
+nextflow run main.nf -with-timeline -with-tower -with-trace -with-report -with-dag --flowcell FLO-MIN106 --kit SQK-LSK109 -c nextflow.config.agentus -work-dir s3://bioinformatics-data/nf-work -N "netsanet.gebremedhin@agenusbio.com" --run test-data --min_qscore 7
+```
 
 ```
 aws batch describe-compute-environments --compute-environments  GPU-ECS-OPT-NF-LT-4  --profile personal >  GPU-ECS-OPT-NF-LT.json
